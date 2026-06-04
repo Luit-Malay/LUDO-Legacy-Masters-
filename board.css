@@ -1,0 +1,101 @@
+
+#board{
+
+    width:min(90vw, 600px);
+
+    height:min(90vw, 600px);
+
+    margin:20px auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(15, 1fr);
+
+    grid-template-rows:
+    repeat(15, 1fr);
+
+    aspect-ratio:1/1;
+}
+@media (max-width:768px){
+
+    #board{
+
+        width:95vw;
+
+        height:95vw;
+    }
+
+}
+
+.cell{
+
+    border:1px solid rgba(
+        255,
+        255,
+        255,
+        0.25
+    );
+
+    box-sizing:border-box;
+}
+
+.red{
+    background:#ff1f1f;
+}
+
+.green{
+    background:#00aa2f;
+}
+
+.blue{
+    background:#0066ff;
+}
+
+.yellow{
+    background:#ffd400;
+}
+
+.path{
+    background:white !important;
+}
+
+.safe{
+
+    background:#f5f5f5 !important;
+
+    box-shadow:
+    inset 0 0 8px gold;
+}
+
+.lm-logo{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:white;
+
+    border-radius:50%;
+
+    background:
+    linear-gradient(
+        45deg,
+        red,
+        green,
+        yellow,
+        blue
+    );
+
+    text-shadow:
+    0 0 10px white;
+}

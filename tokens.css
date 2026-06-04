@@ -1,0 +1,21 @@
+.token{
+
+    width:70%;
+
+    height:70%;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    margin-top:15%;
+
+    border:2px solid white;
+
+    box-sizing:border-box;
+}
+
+.token:hover{
+
+    transform:scale(1.15);
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>
+        LUDO Legacy Masters
+    </title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="board.css">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="animations.css">
+
+</head>
+
+<body>
+
+    <!-- LOADING SCREEN -->
+
+    <div id="loading-screen">
+
+        <div id="loading-logo">
+            LUDO Legacy Masters
+        </div>
+
+        <div id="loading-company">
+            L.M. Creations
+        </div>
+
+        <div id="loading-bar">
+
+            <div id="loading-fill"></div>
+
+        </div>
+
+        <div id="loading-dev">
+            Developed By Luit Malay
+        </div>
+
+    </div>
+
+    <!-- TITLE -->
+
+    <h1>
+        Ludo Game
+    </h1>
+
+    <div id="developer">
+        Developed By Luit Malay
+    </div>
+
+    <!-- PLAYER -->
+
+    <div id="current-player">
+        Current Player: Red
+    </div>
+
+    <!-- BOARD -->
+
+    <div id="board"></div>
+
+    <!-- BUTTONS -->
+
+    <button id="roll-btn">
+        Roll Dice
+    </button>
+
+    <button id="restart-btn">
+        Restart Game
+    </button>
+
+    <!-- DICE -->
+
+    <div id="dice-value">
+        Dice: -
+    </div>
+
+    <!-- CONFIG -->
+
+    <script src="constants.js"></script>
+    <script src="boardConfig.js"></script>
+    <script src="safeZones.js"></script>
+
+    <!-- DATA -->
+
+    <script src="player.js"></script>
+    <script src="token.js"></script>
+
+    <!-- PATHS -->
+
+    <script src="boardPath.js"></script>
+    <script src="homePaths.js"></script>
+
+    <!-- GAME -->
+
+    <script src="gameManager.js"></script>
+
+    <script src="boardRenderer.js"></script>
+
+    <script src="diceManager.js"></script>
+    <script src="turnManager.js"></script>
+    <script src="moveManager.js"></script>
+    <script src="captureManager.js"></script>
+    <script src="winManager.js"></script>
+
+    <!-- UI -->
+
+    <script src="diceUI.js"></script>
+    <script src="boardUI.js"></script>
+    <script src="playerUI.js"></script>
+    <script src="messageUI.js"></script>
+
+    <!-- EXTRA -->
+
+    <script src="restartManager.js"></script>
+    <script src="soundManager.js"></script>
+    <script src="loadingScreen.js"></script>
+
+    <script src="helpers.js"></script>
+    <script src="validator.js"></script>
+
+</body>
+</html>

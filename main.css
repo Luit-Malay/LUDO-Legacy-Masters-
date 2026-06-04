@@ -1,0 +1,406 @@
+body{
+
+    margin:0;
+    padding:20px;
+
+    text-align:center;
+
+    color:white;
+
+    font-family:Arial,sans-serif;
+
+    background:
+    radial-gradient(
+        circle at center,
+        #223b70,
+        #09152f,
+        #000814
+    );
+
+    min-height:100vh;
+}
+
+
+/* LOADING SCREEN */
+
+#loading-screen{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:99999;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    radial-gradient(
+        circle at center,
+        #001b44,
+        #000814
+    );
+}
+
+#loading-logo{
+
+    font-size:64px;
+
+    font-weight:900;
+
+    color:#ffd700;
+
+    text-align:center;
+
+    text-shadow:
+    0 0 15px gold,
+    0 0 30px gold,
+    0 0 60px gold;
+
+    margin-bottom:20px;
+}
+
+#loading-company{
+
+    font-size:24px;
+
+    color:white;
+
+    letter-spacing:4px;
+
+    margin-bottom:25px;
+
+    text-shadow:
+    0 0 10px cyan,
+    0 0 20px cyan;
+}
+
+#loading-bar{
+
+    width:500px;
+
+    max-width:85vw;
+
+    height:24px;
+
+    background:#111;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    border:2px solid white;
+
+    box-shadow:
+    0 0 15px cyan,
+    0 0 25px gold;
+}
+
+#loading-fill{
+
+    height:100%;
+
+    width:0;
+
+    background:
+    linear-gradient(
+        90deg,
+        #ff0000,
+        #00ff00,
+        #ffd700,
+        #0090ff
+    );
+
+    box-shadow:
+    0 0 15px white;
+
+    animation:
+    loadLM 3s linear forwards;
+}
+
+#loading-dev{
+
+    margin-top:25px;
+
+    font-size:20px;
+
+    color:white;
+
+    text-shadow:
+    0 0 10px gold;
+}
+
+@keyframes loadLM{
+
+    from{
+
+        width:0%;
+    }
+
+    to{
+
+        width:100%;
+    }
+}
+
+
+
+
+h1{
+
+    font-size:52px;
+
+    color:#ffd700;
+
+    margin-bottom:5px;
+
+    text-shadow:
+    0 0 15px gold;
+}
+
+#developer{
+
+    color:#ffd700;
+
+    margin-bottom:15px;
+
+    letter-spacing:2px;
+
+    font-weight:bold;
+}
+
+#current-player{
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+}
+
+#roll-btn,
+#restart-btn{
+
+    min-width:120px;
+
+    min-height:50px;
+
+    padding:10px 20px;
+
+    font-size:18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+}
+
+#dice-value{
+
+    margin-top:15px;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    color:#ffd700;
+}
+
+
+.lm-logo{
+
+    width:80%;
+
+    height:80%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        circle,
+        #30ff30,
+        #006600
+    );
+
+    color:white;
+
+    font-size:clamp(
+        10px,
+        1.2vw,
+        18px
+    );
+
+    font-weight:bold;
+
+    text-shadow:
+    0 0 8px cyan;
+
+    box-shadow:
+    0 0 10px cyan,
+    0 0 20px cyan;
+
+    box-sizing:border-box;
+}
+
+@keyframes neonPulse{
+
+    0%{
+
+        opacity:.8;
+    }
+
+    50%{
+
+        opacity:1;
+    }
+
+    100%{
+
+        opacity:.8;
+    }
+}
+
+
+.luit-letter{
+
+    color:white;
+
+    font-weight:900;
+
+    font-size:clamp(
+        28px,
+        4vw,
+        56px
+    );
+
+    line-height:1;
+
+    text-shadow:
+    0 0 10px white,
+    0 0 20px gold,
+    0 0 30px gold;
+
+    margin-bottom:2px;
+}
+
+.luit-name{
+
+    color:white;
+
+    font-weight:bold;
+
+    font-size:clamp(
+        9px,
+        1vw,
+        18px
+    );
+
+    text-align:center;
+
+    text-shadow:
+    0 0 5px white,
+    0 0 10px cyan;
+
+    letter-spacing:1px;
+
+    white-space:nowrap;
+}
+
+
+.luit-wrapper{
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    pointer-events:none;
+}
+
+@keyframes neonPulse{
+
+    0%{
+
+        opacity:0.8;
+    }
+
+    50%{
+
+        opacity:1;
+    }
+
+    100%{
+
+        opacity:0.8;
+    }
+}
+
+
+
+@media (max-width:768px){
+
+    h1{
+
+        font-size:42px;
+    }
+
+    #current-player{
+
+        font-size:24px;
+    }
+
+    #roll-btn,
+    #restart-btn{
+
+        padding:12px 18px;
+
+        font-size:18px;
+    }
+
+    #dice-value{
+
+        font-size:26px;
+    }
+
+    .luit-letter{
+
+        font-size:34px;
+    }
+
+    .luit-name{
+
+        font-size:10px;
+    }
+
+    .lm-logo{
+
+        width:26px;
+
+        height:26px;
+
+        font-size:12px;
+    }
+}
